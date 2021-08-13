@@ -14,7 +14,20 @@
 .navbar {
   padding: 0;
 }
-
+.navbar-brand {
+  max-width: 360px !important;
+}
+@media (max-width: 400px) {
+  .navbar-brand {
+    max-width: 280px !important;
+  }
+  .col-md-12 {
+    padding: 0 !important;
+  }
+  .nav-entry {
+    padding: 0 !important;
+  }
+}
 @media (min-width: 992px) {
   .navbar {
     padding: 0.5rem 0;
