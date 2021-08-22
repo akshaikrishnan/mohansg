@@ -124,7 +124,7 @@
       </div>
     </header>
     <div class="container">
-      <section class="space sticknavi">
+      <section class="space">
         <div class="container container-custom">
           <div class="row">
             <div class="col-md-12">
@@ -289,9 +289,13 @@
       <div class="container container-custom">
         <div class="row">
           <div class="col-sm-12 col-md-12 col-lg-4">
-            <div class="foot-contact-block">
-              <img src="images/foot-logo.png" class="img-fluid" alt="#" />
-              <p>
+            <div class="foot-contact-block gs_reveal">
+              <img
+                src="images/foot-logo.png"
+                class="img-fluid gs_reveal"
+                alt="#"
+              />
+              <p class="gs_reveal">
                 TRA- 155, Karakkamandapam,
 
                 <br />
@@ -307,8 +311,12 @@
             </div>
           </div>
           <div class="col-sm-6 col-md-4 col-lg-2 offset-lg-1">
-            <div class="foot-link-box">
-              <h4>Quick Links</h4>
+            <div class="foot-link-box gs_reveal">
+              <h4>
+                Quick Links
+                <span class="animate-border border-white"></span>
+              </h4>
+
               <ul>
                 <li>
                   <a href="about.html"
@@ -322,7 +330,7 @@
                   >
                 </li>
                 <li>
-                  <a href="services-detail.html"
+                  <a href="services.html"
                     ><i class="fas fa-angle-double-right"></i>Services</a
                   >
                 </li>
@@ -345,41 +353,44 @@
             </div>
           </div>
           <div class="col-sm-6 col-md-4 col-lg-2">
-            <div class="foot-link-box">
-              <h4>Our Services</h4>
+            <div class="foot-link-box gs_reveal">
+              <h4>
+                Our Services <span class="animate-border border-white"></span>
+              </h4>
               <ul>
                 <li>
-                  <a href="services-detail.html#dermatology"
+                  <a href="dermatology.html"
                     ><i class="fas fa-angle-double-right"></i>Dermatology</a
                   >
                 </li>
                 <li>
-                  <a href="services-detail.html#cosmetology"
+                  <a href="cosmetology.html"
                     ><i class="fas fa-angle-double-right"></i>Cosmetology and
                     Aesthetic sciences</a
                   >
                 </li>
                 <li>
-                  <a href="services-detail.html#trichology"
+                  <a href="trichology.html"
                     ><i class="fas fa-angle-double-right"></i>Trichology</a
                   >
                 </li>
                 <li>
-                  <a href="services-detail.html#gastro"
+                  <a href="gastro.html"
                     ><i class="fas fa-angle-double-right"></i>Gastro Care</a
                   >
                 </li>
               </ul>
             </div>
           </div>
-          <div class="col-md-4 col-lg-2 offset-lg-1">
+          <div class="col-md-4 col-lg-2 offset-lg-1 gs_reveal">
             <div class="foot-link-box footlink-box_btn">
               <a
                 href="https://g.page/mohan-skin-and-gastro-care?share"
-                class="btn btn-outline-success"
+                class="btn btn-secondary"
                 >Clinic Location</a
               >
-              <a href="contact-us-2.html" class="btn btn-outline-success"
+
+              <a href="contact-us-2.html" class="btn btn-secondary"
                 >Contact Us</a
               >
               <ul>
@@ -405,7 +416,10 @@
         <div class="row">
           <div class="col-md-12">
             <div class="copyright">
-              <p>© Mohan Skin & Gastro Care 2021 All rights Reserved</p>
+              <p>
+                © Mohan Skin & Gastro Care 2021 All rights Reserved |
+                <a href="https://scribblepanda.in">scribbled by the 🐼</a>
+              </p>
               <a href="#" id="scroll"><i class="fas fa-angle-double-up"></i></a>
             </div>
           </div>
@@ -425,28 +439,29 @@
     <!-- Script Js -->
     <script src="js/script.js"></script>
     <script>
-        $(document).ready(function () {
-          $(".popup-gallery").magnificPopup({
-            delegate: "a",
-            type: "image",
-            tLoading: "Loading image #%curr%...",
-            mainClass: "mfp-img-mobile",
-            gallery: {
-              enabled: true,
-              navigateByImgClick: true,
-              preload: [0, 1], // Will preload 0 - before current, and 1 after the current image
+      $(document).ready(function () {
+        $(".popup-gallery").magnificPopup({
+          delegate: "a",
+          type: "image",
+          tLoading: "Loading image #%curr%...",
+          mainClass: "mfp-img-mobile",
+          gallery: {
+            enabled: true,
+            navigateByImgClick: true,
+            preload: [0, 1], // Will preload 0 - before current, and 1 after the current image
+          },
+          image: {
+            tError:
+              '<a href="%url%">The image #%curr%</a> could not be loaded.',
+            titleSrc: function (item) {
+              return (
+                item.el.attr("title") +
+                "<small>Mohan Skin & Gastro Care</small>"
+              );
             },
-            image: {
-              tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
-              titleSrc: function (item) {
-                return (
-                  item.el.attr("title") + "<small>Mohan Skin & Gastro Care</small>"
-                );
-              },
-            },
-          });
-  });
+          },
+        });
+      });
     </script>
   </body>
 </html>
-

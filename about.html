@@ -78,21 +78,16 @@
                       </li>
                       <!-- Sub Menu -->
                       <li class="nav-item">
-                        <a
-                          class="nav-link"
-                          href="services-detail.html"
-                          role="button"
-                        >
+                        <a class="nav-link" href="services.html" role="button">
                           Services
                         </a>
                       </li>
-                      <!--//End Sub Menu -->
-
                       <li class="nav-item">
                         <a class="nav-link" href="doctors.html" role="button">
                           Our Doctors
                         </a>
                       </li>
+                      <!--//End Sub Menu -->
                       <li class="nav-item">
                         <a class="nav-link" href="gallery.html" role="button">
                           Gallery
@@ -121,23 +116,15 @@
       </div>
     </header>
     <!-- Sub header -->
-    <section class="space sub-header">
-      <div class="container container-custom">
-        <div class="row">
-          <div class="col-md-6">
-            <div class="sub-header_content">
-              <p>ABOUT US</p>
-              <h3>
-                Keep your vitality. A life without health is like a river
-                without water.
-              </h3>
-              <span><i>- Maxime Lagacé</i></span>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="sub-header_main">
-              <h2>About us</h2>
-            </div>
+    <section class="parallax-wrapper">
+      <div
+        class="title-hero-bg parallax contact-cover-bg"
+        style="background-image: url(images/about2.jpg)"
+      >
+        <div class="container">
+          <div class="page-title text-center">
+            <h1>About Us</h1>
+            <h4 class="text-uppercase mt-30 white-color">Home / About us</h4>
           </div>
         </div>
       </div>
@@ -303,7 +290,12 @@
             "
           >
             <div class="counter-btn_block">
-              <a href="contact-us.html" class="btn btn-primary">BOOK NOW</a>
+              <div class="button_su gs_reveal">
+                <span class="su_button_circle"> </span>
+                <a href="contact-us-2.html" class="button_su_inner">
+                  <span class="button_text_container"> Book Now </span>
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -315,9 +307,13 @@
       <div class="container container-custom">
         <div class="row">
           <div class="col-sm-12 col-md-12 col-lg-4">
-            <div class="foot-contact-block">
-              <img src="images/foot-logo.png" class="img-fluid" alt="#" />
-              <p>
+            <div class="foot-contact-block gs_reveal">
+              <img
+                src="images/foot-logo.png"
+                class="img-fluid gs_reveal"
+                alt="#"
+              />
+              <p class="gs_reveal">
                 TRA- 155, Karakkamandapam,
 
                 <br />
@@ -333,8 +329,12 @@
             </div>
           </div>
           <div class="col-sm-6 col-md-4 col-lg-2 offset-lg-1">
-            <div class="foot-link-box">
-              <h4>Quick Links</h4>
+            <div class="foot-link-box gs_reveal">
+              <h4>
+                Quick Links
+                <span class="animate-border border-white"></span>
+              </h4>
+
               <ul>
                 <li>
                   <a href="about.html"
@@ -348,7 +348,7 @@
                   >
                 </li>
                 <li>
-                  <a href="services-detail.html"
+                  <a href="services.html"
                     ><i class="fas fa-angle-double-right"></i>Services</a
                   >
                 </li>
@@ -371,41 +371,44 @@
             </div>
           </div>
           <div class="col-sm-6 col-md-4 col-lg-2">
-            <div class="foot-link-box">
-              <h4>Our Services</h4>
+            <div class="foot-link-box gs_reveal">
+              <h4>
+                Our Services <span class="animate-border border-white"></span>
+              </h4>
               <ul>
                 <li>
-                  <a href="services-detail.html#dermatology"
+                  <a href="dermatology.html"
                     ><i class="fas fa-angle-double-right"></i>Dermatology</a
                   >
                 </li>
                 <li>
-                  <a href="services-detail.html#cosmetology"
+                  <a href="cosmetology.html"
                     ><i class="fas fa-angle-double-right"></i>Cosmetology and
                     Aesthetic sciences</a
                   >
                 </li>
                 <li>
-                  <a href="services-detail.html#trichology"
+                  <a href="trichology.html"
                     ><i class="fas fa-angle-double-right"></i>Trichology</a
                   >
                 </li>
                 <li>
-                  <a href="services-detail.html#gastro"
+                  <a href="gastro.html"
                     ><i class="fas fa-angle-double-right"></i>Gastro Care</a
                   >
                 </li>
               </ul>
             </div>
           </div>
-          <div class="col-md-4 col-lg-2 offset-lg-1">
+          <div class="col-md-4 col-lg-2 offset-lg-1 gs_reveal">
             <div class="foot-link-box footlink-box_btn">
               <a
                 href="https://g.page/mohan-skin-and-gastro-care?share"
-                class="btn btn-outline-success"
+                class="btn btn-secondary"
                 >Clinic Location</a
               >
-              <a href="contact-us-2.html" class="btn btn-outline-success"
+
+              <a href="contact-us-2.html" class="btn btn-secondary"
                 >Contact Us</a
               >
               <ul>
@@ -431,7 +434,10 @@
         <div class="row">
           <div class="col-md-12">
             <div class="copyright">
-              <p>© Mohan Skin & Gastro Care 2021 All rights Reserved</p>
+              <p>
+                © Mohan Skin & Gastro Care 2021 All rights Reserved |
+                <a href="https://scribblepanda.in">scribbled by the 🐼</a>
+              </p>
               <a href="#" id="scroll"><i class="fas fa-angle-double-up"></i></a>
             </div>
           </div>
@@ -450,5 +456,26 @@
     <script src="js/jquery.magnific-popup.min.js"></script>
     <!-- Script Js -->
     <script src="js/script.js"></script>
+    <script>
+      window.addEventListener("scroll", throttle(parallax, 14));
+
+      function throttle(fn, wait) {
+        var time = Date.now();
+        return function () {
+          if (time + wait - Date.now() < 0) {
+            fn();
+            time = Date.now();
+          }
+        };
+      }
+
+      function parallax() {
+        var scrolled = window.pageYOffset;
+        var parallax = document.querySelector(".parallax");
+        // You can adjust the 0.4 to change the speed
+        var coords = scrolled * 0.6 + "px";
+        parallax.style.transform = "translateY(" + coords + ")";
+      }
+    </script>
   </body>
 </html>
