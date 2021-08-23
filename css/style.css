@@ -1960,7 +1960,6 @@ CONTACT US
 
 .get-in-touch {
   position: relative;
-  background: #f21d2f;
   padding: 45px 40px;
   overflow: hidden;
 }
@@ -1973,7 +1972,6 @@ CONTACT US
 
 .get-in-touch h3 {
   font-size: 30px;
-  color: #fff;
   margin: 0 0 20px;
 }
 
@@ -2037,9 +2035,9 @@ CONTACT US
 
 .get-in-touch-style2 {
   margin: 0;
-  background: #d92546;
+  color: #3c3f42 !important;
+  background: #ffffff; /* fallback for old browsers */
 }
-
 .get-in-touch-style2 i {
   color: #3c3f42 !important;
 }

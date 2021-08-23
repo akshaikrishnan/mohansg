@@ -67,11 +67,7 @@
                       </li>
                       <!-- Sub Menu -->
                       <li class="nav-item">
-                        <a
-                          class="nav-link"
-                          href="services.html"
-                          role="button"
-                        >
+                        <a class="nav-link" href="services.html" role="button">
                           Services
                         </a>
                       </li>
@@ -112,23 +108,15 @@
     <!--==================== Header ====================-->
 
     <!-- Sub header -->
-    <section class="space sub-header">
-      <div class="container container-custom">
-        <div class="row">
-          <div class="col-md-6">
-            <div class="sub-header_content">
-              <p>CONTACT US</p>
-              <h3>
-                It is health that is the real wealth, and not pieces of gold and
-                silver.
-              </h3>
-              <span><i>– Mahatma Gandhi</i></span>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="sub-header_main">
-              <h2>Contact Us</h2>
-            </div>
+    <section class="parallax-wrapper">
+      <div
+        class="title-hero-bg parallax contact-cover-bg"
+        style="background-image: url(images/contact-cover.jpg)"
+      >
+        <div class="container">
+          <div class="page-title text-center">
+            <h1>Contact Us</h1>
+            <h4 class="text-uppercase mt-30 white-color">Home / Contact</h4>
           </div>
         </div>
       </div>
@@ -145,8 +133,7 @@
               <hr />
               <div class="contact-title">
                 <h4>Contact Information</h4>
-                <a href="tel:+919946699465">
-                  <i class="fas fa-phone-volume"></i>
+                <a class="btn btn-light btn-block" href="tel:+919946699465">
                   <div class="contact-title_icon">
                     <p>Phone</p>
                     <h6>+91 - 99466 99465</h6>
@@ -154,16 +141,14 @@
                 </a>
               </div>
               <div class="contact-title">
-                <a href="whatsapp:918075060891">
-                  <i class="fas fa-phone-volume"></i>
+                <a class="btn btn-light btn-block" href="whatsapp:918075060891">
                   <div class="contact-title_icon">
                     <p>Phone</p>
                     <h6>+91 - 80750 60891</h6>
                   </div>
                 </a>
               </div>
-              <div class="contact-title">
-                <i class="fas fa-envelope"></i>
+              <div class="contact-title btn btn-light btn-block">
                 <div class="contact-title_icon">
                   <p>Email</p>
                   <a href="mailto:mohansgcare@gmail.com">
@@ -190,7 +175,7 @@
             </div>
           </div>
           <div class="col-md-7">
-            <div class="get-in-touch get-in-touch-style2">
+            <div class="get-in-touch get-in-touch-style2 booking-form">
               <img
                 src="images/contact-form-bg.png"
                 class="img-fluid get-in-bg"
@@ -278,6 +263,7 @@
                         rows="3"
                       ></textarea>
                       <i class="far fa-envelope"></i>
+
                       <button type="submit" class="submit btn btn-success">
                         BOOK NOW
                       </button>
@@ -534,6 +520,25 @@
         }
 
         return str;
+      }
+      window.addEventListener("scroll", throttle(parallax, 14));
+
+      function throttle(fn, wait) {
+        var time = Date.now();
+        return function () {
+          if (time + wait - Date.now() < 0) {
+            fn();
+            time = Date.now();
+          }
+        };
+      }
+
+      function parallax() {
+        var scrolled = window.pageYOffset;
+        var parallax = document.querySelector(".parallax");
+        // You can adjust the 0.4 to change the speed
+        var coords = scrolled * 0.6 + "px";
+        parallax.style.transform = "translateY(" + coords + ")";
       }
     </script>
   </body>
