@@ -2034,6 +2034,8 @@ CONTACT US
 }
 
 .get-in-touch-style2 {
+  border: rgb(177, 177, 177) solid 0.5px;
+  border-radius: 10px;
   margin: 0;
   color: #3c3f42 !important;
   background: #ffffff; /* fallback for old browsers */
