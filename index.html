@@ -34,6 +34,7 @@
     <!-- Script Js -->
 
     <title>Mohan Skin and Gastro Care</title>
+          <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <meta
       name="description"
       content="Mohan Skin & Gastro Care is a state-of-the-art
@@ -666,7 +667,7 @@
                 <li>Allergies</li>
               </ul>
 
-              <a href="#" class="btn btn-dark">READ MORE</a>
+              <a href="dermatology.html" class="btn btn-dark">READ MORE</a>
               <div class="service-bg-icon">
                 <img src="images/services-bg2.png" class="img-fluid" alt="#" />
               </div>
@@ -683,7 +684,7 @@
                 <li>Hair Loss Treatment</li>
               </ul>
 
-              <a href="#" class="btn btn-dark">READ MORE</a>
+              <a href="trichology.html" class="btn btn-dark">READ MORE</a>
               <div class="service-bg-icon">
                 <img src="images/services-bg3.png" class="img-fluid" alt="#" />
               </div>
@@ -1003,6 +1004,28 @@
             });
       })(window, document);
     </script>
-    
+    <script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.9.0/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyBL2QKUvSe9VHPGCN-of_gQVqvmfc-zzOE",
+    authDomain: "mohan-sg-care.firebaseapp.com",
+    projectId: "mohan-sg-care",
+    storageBucket: "mohan-sg-care.appspot.com",
+    messagingSenderId: "323136738720",
+    appId: "1:323136738720:web:989c6ae18e73f65f28c0c5",
+    measurementId: "G-MXNW3QKDCD"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
   </body>
 </html>
